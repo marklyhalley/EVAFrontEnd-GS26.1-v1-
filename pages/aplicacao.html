@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E.V.A. — Aplicação no Dia a Dia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="eva-navbar">
+  <div class="navbar-inner">
+    <a href="../index.html" class="navbar-brand">
+      <span class="brand-dot"></span>E.V.A.
+    </a>
+    <button class="navbar-toggler" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="navbar-nav-list">
+      <li class="nav-item"><a href="../index.html"><span class="material-icons" style="font-size:1.1rem;vertical-align:middle">public</span> Problema</a></li>
+      <li class="nav-item"><a href="tecnologia.html"><span class="material-icons" style="font-size:1.1rem;vertical-align:middle">science</span> Tecnologia</a></li>
+      <li class="nav-item"><a href="objetivos.html"><span class="material-icons" style="font-size:1.1rem;vertical-align:middle">gps_fixed</span> Objetivos</a></li>
+      <li class="nav-item"><a href="beneficios.html"><span class="material-icons" style="font-size:1.1rem;vertical-align:middle">auto_awesome</span> Benefícios</a></li>
+      <li class="nav-item"><a href="aplicacao.html"><span class="material-icons" style="font-size:1.1rem;vertical-align:middle">rocket_launch</span> Aplicação</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="page-content">
+  <div class="page-wrapper">
+
+    <div class="section-header reveal" style="padding-top:2rem">
+      <span class="section-label">// operação em tempo real</span>
+      <h1 class="section-title">Aplicação no <span class="text-purple">Dia a Dia</span></h1>
+      <p class="section-sub">O E.V.A. em operação: missão ao vivo, dashboard de sensores, agente IA e equipe de missão</p>
+    </div>
+
+    <div class="reveal mb-4">
+      <div class="section-label mb-3"><span class="material-icons" style="font-size:1rem;vertical-align:middle">schedule</span> Contador da Missão — em tempo real</div>
+      <div class="mission-timer">
+        <div>
+          <div style="font-size:.75rem;color:var(--color-text-muted);margin-bottom:.25rem">Missão iniciada em 25 de maio de 2026</div>
+          <div style="font-size:1.5rem;font-weight:700;color:var(--color-white);font-family:var(--font-display)">
+            Dia <span id="timer-days" style="color:var(--color-green)">--</span> da Missão
+          </div>
+          <div style="font-size:.9rem;color:var(--color-green);margin-top:.2rem" id="timer-phase">Calculando fase...</div>
+        </div>
+        <div class="timer-digits">
+          <div class="timer-block">
+            <div class="timer-num" id="timer-days-dup">--</div>
+            <div class="timer-label">dias</div>
+          </div>
+          <div class="timer-sep">:</div>
+          <div class="timer-block">
+            <div class="timer-num" id="timer-hours">--</div>
+            <div class="timer-label">horas</div>
+          </div>
+          <div class="timer-sep">:</div>
+          <div class="timer-block">
+            <div class="timer-num" id="timer-mins">--</div>
+            <div class="timer-label">min</div>
+          </div>
+          <div class="timer-sep">:</div>
+          <div class="timer-block">
+            <div class="timer-num" id="timer-secs">--</div>
+            <div class="timer-label">seg</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label mt-4 mb-3 reveal"><span class="material-icons" style="font-size:1rem;vertical-align:middle">sensors</span> Sensores IoT — Leituras Atuais</div>
+    <div class="row g-3 mb-4 reveal">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="metric-card" style="--metric-color:var(--color-green)">
+          <div class="metric-icon icon-green"><span class="material-icons" style="font-size:1.5rem">science</span></div>
+          <div class="metric-info">
+            <div class="metric-label">pH do Solo</div>
+            <div>
+              <span class="metric-value">7.1</span>
+              <span class="metric-unit"> pH</span>
+            </div>
+          </div>
+          <span class="metric-status" style="background:var(--color-green-dim);color:var(--color-green)">Neutro</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="metric-card" style="--metric-color:var(--color-purple)">
+          <div class="metric-icon icon-purple"><span class="material-icons" style="font-size:1.5rem">water_drop</span></div>
+          <div class="metric-info">
+            <div class="metric-label">Umidade do Micélio</div>
+            <div>
+              <span class="metric-value">68</span>
+              <span class="metric-unit"> %</span>
+            </div>
+          </div>
+          <span class="metric-status" style="background:var(--color-purple-dim);color:var(--color-purple-light)">Ótimo</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="metric-card" style="--metric-color:var(--color-gold)">
+          <div class="metric-icon icon-gold"><span class="material-icons" style="font-size:1.5rem">warning</span></div>
+          <div class="metric-info">
+            <div class="metric-label">Nível de Radiação</div>
+            <div>
+              <span class="metric-value">64</span>
+              <span class="metric-unit"> μSv/h</span>
+            </div>
+          </div>
+          <span class="metric-status" style="background:var(--color-gold-dim);color:var(--color-gold)">Controlado</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="metric-card" style="--metric-color:var(--color-red)">
+          <div class="metric-icon icon-red"><span class="material-icons" style="font-size:1.5rem">report_problem</span></div>
+          <div class="metric-info">
+            <div class="metric-label">Toxicidade (Perclorato)</div>
+            <div>
+              <span class="metric-value">17</span>
+              <span class="metric-unit"> ppm</span>
+            </div>
+          </div>
+          <span class="metric-status" style="background:var(--color-red-dim);color:var(--color-red)">Reduzindo</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="metric-card" style="--metric-color:var(--color-green)">
+          <div class="metric-icon icon-green"><span class="material-icons" style="font-size:1.5rem">bolt</span></div>
+          <div class="metric-info">
+            <div class="metric-label">Atividade Bioelétrica</div>
+            <div>
+              <span class="metric-value">63</span>
+              <span class="metric-unit"> mV</span>
+            </div>
+          </div>
+          <span class="metric-status" style="background:var(--color-green-dim);color:var(--color-green)">Alta</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="metric-card" style="--metric-color:var(--color-purple)">
+          <div class="metric-icon icon-purple"><span class="material-icons" style="font-size:1.5rem">thermostat</span></div>
+          <div class="metric-info">
+            <div class="metric-label">Temperatura do Dome</div>
+            <div>
+              <span class="metric-value">18</span>
+              <span class="metric-unit"> °C</span>
+            </div>
+          </div>
+          <span class="metric-status" style="background:var(--color-purple-dim);color:var(--color-purple-light)">Estável</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-container mb-4 reveal">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;flex-wrap:wrap;gap:.5rem">
+        <div>
+          <div class="section-label" style="margin-bottom:.2rem"><span class="material-icons" style="font-size:1rem;vertical-align:middle">bar_chart</span> Evolução das Métricas — Últimas 24h</div>
+          <div style="font-size:.78rem;color:var(--color-text-muted)">pH · Umidade · Toxicidade · Bioelétrica</div>
+        </div>
+        <span style="font-family:var(--font-mono);font-size:.72rem;color:var(--color-green);background:var(--color-green-dim);padding:.25rem .65rem;border-radius:100px">● Ao Vivo</span>
+      </div>
+      <div class="chart-wrapper">
+        <canvas id="metricsChart"></canvas>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-4 reveal">
+      <div class="col-12 col-md-7">
+        <div class="section-label mb-3"><span class="material-icons" style="font-size:1rem;vertical-align:middle">psychology</span> IA Sentinel — Log de Atividade</div>
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span style="background:#ff5f57;margin-right:5px"></span>
+              <span style="background:#febc2e;margin-right:5px"></span>
+              <span style="background:#28c840"></span>
+            </div>
+            <span style="font-family:var(--font-mono);font-size:.75rem;color:rgba(255,255,255,.4);margin-left:.75rem">sentinel@eva.dome:~$</span>
+            <span style="margin-left:auto;font-size:.7rem;color:var(--color-green)">● Online</span>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <div class="log-line">
+              <span class="log-time">12:47:32</span>
+              <span class="log-info">Sistema inicializado. Conectando à rede de micélio...</span>
+            </div>
+            <div class="log-line">
+              <span class="log-time">12:47:45</span>
+              <span class="log-success">Rede fúngica detectada. 24 nós ativos no setor A-C.</span>
+            </div>
+            <div class="log-line">
+              <span class="log-time">12:48:01</span>
+              <span class="log-warning">Alteração química detectada no setor B. Analisando...</span>
+            </div>
+            <div class="log-line">
+              <span class="log-time">12:48:15</span>
+              <span class="log-success">Diagnóstico: Redução de perclorato 12%. Status: Positivo.</span>
+            </div>
+            <div class="log-line">
+              <span class="log-time">12:48:32</span>
+              <span class="log-info">Iniciando liberação de enzimas na Fase 2...</span>
+            </div>
+            <div class="log-line">
+              <span class="log-time">12:48:47</span>
+              <span class="log-success">Atividade bioelétrica aumentou 8% no setor B.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5">
+        <div class="section-label mb-3"><span class="material-icons" style="font-size:1rem;vertical-align:middle">assignment</span> Status do Sistema</div>
+        <div class="row g-3">
+          <div class="col-12">
+            <div style="background:var(--color-surface);border:1px solid rgba(29,158,117,0.25);border-radius:var(--radius-sm);padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between">
+              <div style="font-size:.85rem;color:var(--color-text-dim)"><span class="material-icons" style="font-size:1rem;vertical-align:middle">psychology</span> IA Sentinel</div>
+              <span style="font-family:var(--font-mono);font-size:.75rem;color:var(--color-green)">● ONLINE</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div style="background:var(--color-surface);border:1px solid rgba(83,58,183,0.25);border-radius:var(--radius-sm);padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between">
+              <div style="font-size:.85rem;color:var(--color-text-dim)"><span class="material-icons" style="font-size:1rem;vertical-align:middle">sensors</span> 24 Sensores IoT</div>
+              <span style="font-family:var(--font-mono);font-size:.75rem;color:var(--color-green)">● ATIVOS</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div style="background:var(--color-surface);border:1px solid rgba(250,199,117,0.25);border-radius:var(--radius-sm);padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between">
+              <div style="font-size:.85rem;color:var(--color-text-dim)"><span class="material-icons" style="font-size:1rem;vertical-align:middle">eco</span> Rede Fúngica</div>
+              <span style="font-family:var(--font-mono);font-size:.75rem;color:var(--color-green)">● EXPANDINDO</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div style="background:var(--color-surface);border:1px solid rgba(153,60,29,0.25);border-radius:var(--radius-sm);padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between">
+              <div style="font-size:.85rem;color:var(--color-text-dim)"><span class="material-icons" style="font-size:1rem;vertical-align:middle">shield</span> Shield Radiológico</div>
+              <span style="font-family:var(--font-mono);font-size:.75rem;color:var(--color-gold)">◌ FASE 4</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-sm);padding:1rem 1.25rem">
+              <div style="font-size:.78rem;color:var(--color-text-muted);margin-bottom:.6rem">Análises realizadas (hora)</div>
+              <div class="font-mono" style="font-size:1.6rem;font-weight:700;color:var(--color-purple-light)">1,247</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="border-color:var(--color-border);margin:2rem 0">
+    <div class="section-label mb-4 reveal"><span class="material-icons" style="font-size:1rem;vertical-align:middle">group</span> Equipe de Missão</div>
+    <div class="row g-3 mb-5 reveal">
+      <div class="col-12 col-md-6">
+        <div class="team-card">
+          <div class="team-avatar"><span class="material-icons" style="font-size:2rem">code</span></div>
+          <div>
+            <div style="font-weight:600;color:var(--color-white);font-size:.95rem">Gustavo Almeida Ferreira</div>
+            <div style="font-size:.8rem;color:var(--color-green);font-family:var(--font-mono)">RM 566980</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="team-card">
+          <div class="team-avatar"><span class="material-icons" style="font-size:2rem">rocket_launch</span></div>
+          <div>
+            <div style="font-weight:600;color:var(--color-white);font-size:.95rem">Lucas de Oliveira Miranda Caetano</div>
+            <div style="font-size:.8rem;color:var(--color-green);font-family:var(--font-mono)">RM 568036</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="team-card">
+          <div class="team-avatar"><span class="material-icons" style="font-size:2rem">biotech</span></div>
+          <div>
+            <div style="font-weight:600;color:var(--color-white);font-size:.95rem">Marco Túlio Longo Conte</div>
+            <div style="font-size:.8rem;color:var(--color-green);font-family:var(--font-mono)">RM 568373</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="team-card">
+          <div class="team-avatar"><span class="material-icons" style="font-size:2rem">terminal</span></div>
+          <div>
+            <div style="font-weight:600;color:var(--color-white);font-size:.95rem">Sofia Souza Rodrigues</div>
+            <div style="font-size:.8rem;color:var(--color-green);font-family:var(--font-mono)">RM 566708</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="team-card">
+          <div class="team-avatar"><span class="material-icons" style="font-size:2rem">explore</span></div>
+          <div>
+            <div style="font-weight:600;color:var(--color-white);font-size:.95rem">Camile Vitória Silva</div>
+            <div style="font-size:.8rem;color:var(--color-green);font-family:var(--font-mono)">RM 566649</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label mb-3 reveal"><span class="material-icons" style="font-size:1rem;vertical-align:middle">build</span> Stack Tecnológico</div>
+    <div class="d-flex flex-wrap gap-2 mb-5 reveal">
+      <span class="tech-tag"><span class="material-icons" style="font-size:.9rem;vertical-align:middle">eco</span> Fungos Micorrízicos</span>
+      <span class="tech-tag"><span class="material-icons" style="font-size:.9rem;vertical-align:middle">sensors</span> Sensores IoT</span>
+      <span class="tech-tag"><span class="material-icons" style="font-size:.9rem;vertical-align:middle">smart_toy</span> Machine Learning</span>
+      <span class="tech-tag"><span class="material-icons" style="font-size:.9rem;vertical-align:middle">biotech</span> Biologia Sintética</span>
+      <span class="tech-tag"><span class="material-icons" style="font-size:.9rem;vertical-align:middle">analytics</span> Análise Preditiva</span>
+      <span class="tech-tag"><span class="material-icons" style="font-size:.9rem;vertical-align:middle">psychology</span> Redes Neurais</span>
+      <span class="tech-tag"><span class="material-icons" style="font-size:.9rem;vertical-align:middle">science</span> Bioengenharia</span>
+      <span class="tech-tag"><span class="material-icons" style="font-size:.9rem;vertical-align:middle">cloud</span> Computação em Nuvem</span>
+      <span class="tech-tag"><span class="material-icons" style="font-size:.9rem;vertical-align:middle">wifi</span> Protocolo MQTT</span>
+      <span class="tech-tag"><span class="material-icons" style="font-size:.9rem;vertical-align:middle">solar_power</span> Energia Solar</span>
+    </div>
+
+    <div class="section-gap reveal">
+      <div class="cta-banner">
+        <span class="section-label">// visão de futuro</span>
+        <h3 style="font-size:1.8rem;margin:.75rem 0 1rem">
+          Vida onde não deveria existir
+        </h3>
+        <p class="text-dim mb-4" style="max-width:540px;margin-left:auto;margin-right:auto;line-height:1.7">
+          Acreditamos que a colonização espacial sustentável só é possível através da biomimética
+          e da cooperação entre sistemas naturais e tecnológicos. O E.V.A. é o primeiro passo de
+          uma nova era — onde a vida se adapta, se regenera e prospera, seja na Terra ou entre as estrelas.
+        </p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+          <a href="../index.html" class="btn-eva btn-eva-primary">← Voltar ao Início</a>
+          <a href="objetivos.html" class="btn-eva btn-eva-outline">Ver Fases da Missão</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="eva-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand"><span class="material-icons" style="font-size:1.2rem;vertical-align:middle">hexagon</span> E.V.A.</div>
+      <div class="footer-sub">Ecossistema Vivo Adaptável · Global Solution 2026</div>
+    </div>
+    <nav class="footer-links">
+      <a href="../index.html">Problema</a>
+      <a href="tecnologia.html">Tecnologia</a>
+      <a href="objetivos.html">Objetivos</a>
+      <a href="beneficios.html">Benefícios</a>
+      <a href="aplicacao.html">Aplicação</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="../js/main.js"></script>
+
+<script>
+  setInterval(() => {
+    const d = document.getElementById('timer-days');
+    const dup = document.getElementById('timer-days-dup');
+    if (d && dup) dup.textContent = d.textContent;
+  }, 1000);
+</script>
+</body>
+</html>
