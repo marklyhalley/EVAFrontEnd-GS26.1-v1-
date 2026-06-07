@@ -1,3 +1,18 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root { --section-gap: 4rem; --card-pad: 1.5rem; }
+
+  .navbar-inner { padding: 0 1.25rem; }
+  .page-wrapper { padding: 0 1.25rem; }
+
+  .hero-title { font-size: clamp(2rem, 5vw, 3.2rem); }
+  .hero-section { padding: 5rem 1.25rem; }
+
+  .cta-banner { padding: 2.5rem 1.5rem; }
+
+  .footer-inner { padding: 0 1.25rem; }
+  .footer-links { gap: 1rem; }
+}
+
 @media (max-width: 768px) {
   :root { --section-gap: 3.5rem; --card-pad: 1.25rem; }
 
