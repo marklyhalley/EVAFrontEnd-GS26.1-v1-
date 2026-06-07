@@ -102,7 +102,7 @@ function initMissionTimer() {
         days < 15 ? 'Fase 2 — Estruturação do Solo' :
         days < 30 ? 'Fase 3 — Nutrição e Regeneração' :
         'Fase 4 — Proteção e Estabilidade';
-      phaseEl.textContent = phase;
+      phaseEl.textContent = '● Fase 0 concluída · ' + phase;
     }
   }
   tick();

@@ -171,6 +171,52 @@
     </div>
 
     <div class="row g-4 mb-4 reveal">
+      <div class="col-12">
+        <div class="section-label mb-3">
+          <span class="material-icons" style="font-size:1rem;vertical-align:middle">rocket_launch</span>
+          Fase 0 — Transporte da Carga Biológica · Dragon Capsule
+        </div>
+        <div class="dragon-iot-card">
+          <div class="row g-4 align-items-start">
+            <div class="col-12 col-md-4">
+              <img src="../images/fases/fase0.png"
+                   alt="Câmaras criogênicas contendo culturas fúngicas luminosas de cor âmbar a bordo de uma nave espacial, com Marte visível ao fundo pela janela"
+                   style="width:100%;border-radius:var(--radius);aspect-ratio:16/9;object-fit:cover;display:block;" />
+            </div>
+            <div class="col-12 col-md-8">
+              <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem">
+                <span class="material-icons" style="font-size:2.2rem;color:#FAC775">rocket_launch</span>
+                <div>
+                  <h4 style="font-size:1.05rem;margin-bottom:.15rem">SpaceX Dragon Capsule · Telemetria IoT em Tempo Real</h4>
+                  <code style="font-size:.7rem;color:rgba(250,199,117,0.6)">dragon/telemetry/full · ESP32 · HiveMQ Cloud · MQTT/TLS</code>
+                </div>
+              </div>
+              <p class="text-dim" style="font-size:.875rem;line-height:1.72;margin-bottom:1.25rem">
+                Antes que qualquer fungo possa atuar no solo marciano, ele precisa chegar lá vivo. Os consórcios fúngicos
+                são acondicionados em câmaras criogênicas na cápsula Dragon. Um firmware ESP32 monitora 6 parâmetros
+                ambientais críticos a cada 3 segundos via MQTT, acionando alertas LED e buzzer imediatamente se
+                qualquer valor sair da faixa segura para sobrevivência fúngica.
+              </p>
+              <div class="row g-2 mb-3">
+                <div class="col-6 col-sm-4"><div class="iot-param"><div class="iot-param-label">Temperatura</div><div class="iot-param-value">4–25 °C</div></div></div>
+                <div class="col-6 col-sm-4"><div class="iot-param"><div class="iot-param-label">Umidade</div><div class="iot-param-value">&gt;30 %</div></div></div>
+                <div class="col-6 col-sm-4"><div class="iot-param"><div class="iot-param-label">Pressão</div><div class="iot-param-value">0,9–1,1 atm</div></div></div>
+                <div class="col-6 col-sm-4"><div class="iot-param"><div class="iot-param-label">Radiação</div><div class="iot-param-value">&lt;10 µSv/h</div></div></div>
+                <div class="col-6 col-sm-4"><div class="iot-param"><div class="iot-param-label">Oxigênio</div><div class="iot-param-value">&gt;19,5 %</div></div></div>
+                <div class="col-6 col-sm-4"><div class="iot-param"><div class="iot-param-label">Aceleração</div><div class="iot-param-value">&lt;2 G</div></div></div>
+              </div>
+              <div style="padding:.75rem 1rem;background:var(--color-surface);border-radius:var(--radius-sm);border:1px solid var(--color-border);font-size:.76rem;color:var(--color-text-muted)">
+                <span class="material-icons" style="font-size:.9rem;vertical-align:middle;margin-right:.3rem">info</span>
+                Simulação disponível no Wokwi · Hardware: ESP32 DevKit V1 + DHT22 + sensores analógicos ·
+                Disciplina: <strong style="color:#FAC775">Edge Computing &amp; Computer Systems</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-4 reveal">
       <div class="col-12 col-md-7">
         <div class="section-label mb-3"><span class="material-icons" style="font-size:1rem;vertical-align:middle">psychology</span> IA Sentinel — Log de Atividade</div>
         <div class="terminal-card">
@@ -254,7 +300,7 @@
     <div class="row g-3 mb-5 reveal">
       <div class="col-12 col-md-6">
         <div class="team-card">
-          <div class="team-avatar"><span class="material-icons" style="font-size:2rem">code</span></div>
+          <img src="../images/equipe/gustavo.jpeg" alt="Foto de Gustavo Almeida Ferreira" class="team-photo-v1" />
           <div>
             <div style="font-weight:600;color:var(--color-white);font-size:.95rem">Gustavo Almeida Ferreira</div>
             <div style="font-size:.8rem;color:var(--color-green);font-family:var(--font-mono)">RM 566980</div>
@@ -263,7 +309,7 @@
       </div>
       <div class="col-12 col-md-6">
         <div class="team-card">
-          <div class="team-avatar"><span class="material-icons" style="font-size:2rem">rocket_launch</span></div>
+          <img src="../images/equipe/lucas.jpeg" alt="Foto de Lucas de Oliveira Miranda Caetano" class="team-photo-v1" />
           <div>
             <div style="font-weight:600;color:var(--color-white);font-size:.95rem">Lucas de Oliveira Miranda Caetano</div>
             <div style="font-size:.8rem;color:var(--color-green);font-family:var(--font-mono)">RM 568036</div>
@@ -272,7 +318,7 @@
       </div>
       <div class="col-12 col-md-6">
         <div class="team-card">
-          <div class="team-avatar"><span class="material-icons" style="font-size:2rem">biotech</span></div>
+          <img src="../images/equipe/marco.jpeg" alt="Foto de Marco Túlio Longo Conte" class="team-photo-v1" />
           <div>
             <div style="font-weight:600;color:var(--color-white);font-size:.95rem">Marco Túlio Longo Conte</div>
             <div style="font-size:.8rem;color:var(--color-green);font-family:var(--font-mono)">RM 568373</div>
@@ -281,7 +327,7 @@
       </div>
       <div class="col-12 col-md-6">
         <div class="team-card">
-          <div class="team-avatar"><span class="material-icons" style="font-size:2rem">terminal</span></div>
+          <img src="../images/equipe/sofia.jpeg" alt="Foto de Sofia Souza Rodrigues" class="team-photo-v1" />
           <div>
             <div style="font-weight:600;color:var(--color-white);font-size:.95rem">Sofia Souza Rodrigues</div>
             <div style="font-size:.8rem;color:var(--color-green);font-family:var(--font-mono)">RM 566708</div>
@@ -290,7 +336,7 @@
       </div>
       <div class="col-12 col-md-6">
         <div class="team-card">
-          <div class="team-avatar"><span class="material-icons" style="font-size:2rem">explore</span></div>
+          <img src="../images/equipe/camile.jpeg" alt="Foto de Camile Vitória Silva" class="team-photo-v1" />
           <div>
             <div style="font-weight:600;color:var(--color-white);font-size:.95rem">Camile Vitória Silva</div>
             <div style="font-size:.8rem;color:var(--color-green);font-family:var(--font-mono)">RM 566649</div>

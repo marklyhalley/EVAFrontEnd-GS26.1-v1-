@@ -16,12 +16,8 @@
 
 <header class="eva-navbar">
   <div class="navbar-inner">
-    <a href="../index.html" class="navbar-brand">
-      <span class="brand-dot"></span>E.V.A.
-    </a>
-    <button class="navbar-toggler" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="../index.html" class="navbar-brand"><span class="brand-dot"></span>E.V.A.</a>
+    <button class="navbar-toggler" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul class="navbar-nav-list">
       <li class="nav-item"><a href="../index.html"><span class="material-icons" style="font-size:1.1rem;vertical-align:middle">public</span> Problema</a></li>
       <li class="nav-item"><a href="tecnologia.html"><span class="material-icons" style="font-size:1.1rem;vertical-align:middle">science</span> Tecnologia</a></li>
@@ -38,51 +34,65 @@
     <div class="section-header reveal" style="padding-top:2rem">
       <span class="section-label">// roadmap da missão</span>
       <h1 class="section-title">Objetivos e <span class="text-green">Fases</span></h1>
-      <p class="section-sub">Quatro fases sequenciais que transformam solo hostil em ecossistema vivo. Clique em cada fase para saber mais.</p>
+      <p class="section-sub">Da Terra a Marte: cinco fases que transformam solo hostil em ecossistema vivo. Clique em cada fase para saber mais.</p>
     </div>
 
     <div class="row g-4 mb-5 reveal">
-      <div class="col-12">
-        <div class="section-label mb-3">Comprometimento com os ODS da ONU</div>
+      <div class="col-12 col-md-4">
+        <div class="ods-card"><div class="ods-number text-green">2</div><div class="card-title">Fome Zero</div><p class="card-desc">Segurança alimentar global através da regeneração de solos improdutivos e áridos.</p></div>
       </div>
       <div class="col-12 col-md-4">
-        <div class="ods-card">
-          <div class="ods-number text-green">15</div>
-          <div class="card-title">Vida Terrestre</div>
-          <p class="card-desc">Restauração de ecossistemas degradados e prevenção da desertificação do solo.</p>
-        </div>
+        <div class="ods-card"><div class="ods-number text-purple">9</div><div class="card-title">Indústria &amp; Inovação</div><p class="card-desc">Tecnologia IoT e análise computacional para soluções escaláveis em ambientes extremos da Terra e Marte.</p></div>
       </div>
       <div class="col-12 col-md-4">
-        <div class="ods-card">
-          <div class="ods-number text-purple">9</div>
-          <div class="card-title">Indústria &amp; Inovação</div>
-          <p class="card-desc">Tecnologia IoT e IA para soluções escaláveis em ambientes extremos da Terra e Marte.</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="ods-card">
-          <div class="ods-number text-red">2</div>
-          <div class="card-title">Fome Zero</div>
-          <p class="card-desc">Segurança alimentar global através da regeneração de solos improdutivos e áridos.</p>
-        </div>
+        <div class="ods-card"><div class="ods-number text-gold">13</div><div class="card-title">Ação Climática</div><p class="card-desc">Restauração de ecossistemas degradados, sequestro de carbono e prevenção da desertificação do solo.</p></div>
       </div>
     </div>
 
     <hr style="border-color:var(--color-border);margin:2rem 0 3rem">
-
     <div class="section-label mb-4 reveal">Fases de Execução — clique para expandir</div>
+
+    <div class="row g-3 reveal mb-3">
+      <div class="col-12">
+        <div class="phase-card phase-card-0" style="--phase-color:#B87D2A" data-detail="detail-00">
+          <div class="row g-4 align-items-center">
+            <div class="col-12 col-md-5">
+              <div class="phase-card-img" style="height:200px">
+                <img src="../images/fases/fase0.png" alt="Câmaras criogênicas contendo culturas fúngicas luminosas de cor âmbar a bordo de uma nave espacial, com Marte visível ao fundo pela janela" />
+              </div>
+            </div>
+            <div class="col-12 col-md-7">
+              <div class="phase-number" style="color:#B87D2A">00</div>
+              <span class="phase-status" style="background:rgba(250,199,117,0.15);color:#FAC775">
+                <span class="material-icons" style="font-size:.85rem;vertical-align:middle">check</span> Concluído
+              </span>
+              <h3 style="font-size:1.2rem;margin-bottom:.3rem">Transporte da Carga Biológica</h3>
+              <p style="font-size:.78rem;color:var(--color-text-muted);font-family:var(--font-mono);margin-bottom:.75rem">Pré-Missão · SpaceX Dragon Capsule</p>
+              <p class="card-desc" style="font-size:.875rem;margin-bottom:.75rem">Consórcios fúngicos acondicionados em câmaras criogênicas e transportados da Terra com monitoramento IoT contínuo de 6 parâmetros ambientais críticos via ESP32 + MQTT + HiveMQ Cloud.</p>
+              <div style="font-size:.78rem;color:var(--color-text-muted);margin-bottom:.75rem"><span class="material-icons" style="font-size:.85rem;vertical-align:middle">schedule</span> Pré-missão · Terra → Marte (7 meses)</div>
+              <div class="phase-progress-bar"><div class="phase-progress-fill" data-progress="100" style="background:#B87D2A"></div></div>
+              <div style="display:flex;justify-content:space-between;margin-top:.4rem">
+                <span style="font-size:.72rem;color:var(--color-text-muted)">Progresso</span>
+                <span style="font-size:.72rem;color:#FAC775;font-family:var(--font-mono)">100%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="row g-3 reveal">
       <div class="col-12 col-md-6">
         <div class="phase-card" style="--phase-color:#993C1D" data-detail="detail-01">
+          <div class="phase-card-img">
+            <img src="../images/fases/fase1.png" alt="Filamentos de micélio verde bioluminescente atacando e dissolvendo compostos tóxicos de perclorato no regolito marciano escuro" />
+          </div>
           <div class="phase-number">01</div>
           <span class="phase-status status-done"><span class="material-icons" style="font-size:.85rem;vertical-align:middle">check</span> Concluído</span>
           <h3 style="font-size:1.1rem;margin-bottom:.4rem">Desintoxicação</h3>
           <p class="card-desc" style="font-size:.85rem;margin-bottom:0.75rem">Uso de fungos <em>Trichoderma</em> e bactérias extremófilas para reduzir toxicidade e estabilizar o solo.</p>
           <div style="font-size:.78rem;color:var(--color-text-muted);margin-bottom:.75rem"><span class="material-icons" style="font-size:.85rem;vertical-align:middle">schedule</span> 0–5 dias · Setor A</div>
-          <div class="phase-progress-bar">
-            <div class="phase-progress-fill" data-progress="100" style="background:#993C1D"></div>
-          </div>
+          <div class="phase-progress-bar"><div class="phase-progress-fill" data-progress="100" style="background:#993C1D"></div></div>
           <div style="display:flex;justify-content:space-between;margin-top:.4rem">
             <span style="font-size:.72rem;color:var(--color-text-muted)">Progresso</span>
             <span style="font-size:.72rem;color:#993C1D;font-family:var(--font-mono)">100%</span>
@@ -92,14 +102,15 @@
 
       <div class="col-12 col-md-6">
         <div class="phase-card" style="--phase-color:#1D9E75" data-detail="detail-02">
+          <div class="phase-card-img">
+            <img src="../images/fases/fase2.png" alt="Rede de micélio bioluminescente em verde-azulado formando estrutura tridimensional ramificada no solo escuro do regolito marciano" />
+          </div>
           <div class="phase-number">02</div>
           <span class="phase-status status-active">● Ativo</span>
           <h3 style="font-size:1.1rem;margin-bottom:.4rem">Estruturação do Solo</h3>
           <p class="card-desc" style="font-size:.85rem;margin-bottom:0.75rem">Desenvolvimento da rede de micélio (<em>Pleurotus ostreatus</em>) para aglomerar partículas e reter água.</p>
           <div style="font-size:.78rem;color:var(--color-text-muted);margin-bottom:.75rem"><span class="material-icons" style="font-size:.85rem;vertical-align:middle">schedule</span> 5–15 dias · Setor B</div>
-          <div class="phase-progress-bar">
-            <div class="phase-progress-fill" data-progress="68"></div>
-          </div>
+          <div class="phase-progress-bar"><div class="phase-progress-fill" data-progress="68"></div></div>
           <div style="display:flex;justify-content:space-between;margin-top:.4rem">
             <span style="font-size:.72rem;color:var(--color-text-muted)">Progresso</span>
             <span style="font-size:.72rem;color:var(--color-green);font-family:var(--font-mono)">68%</span>
@@ -109,14 +120,15 @@
 
       <div class="col-12 col-md-6">
         <div class="phase-card" style="--phase-color:#1D9E75" data-detail="detail-03">
+          <div class="phase-card-img">
+            <img src="../images/fases/fase3.png" alt="Três mudas com raízes translúcidas emergindo do solo marciano dentro de um dome, conectadas por rede micelial micorrízica dourada bioluminescente visível abaixo da superfície" />
+          </div>
           <div class="phase-number">03</div>
           <span class="phase-status status-active">● Ativo</span>
           <h3 style="font-size:1.1rem;margin-bottom:.4rem">Nutrição e Regeneração</h3>
           <p class="card-desc" style="font-size:.85rem;margin-bottom:0.75rem">Simbiose micorrízica com plantas (<em>Glomus/Rhizophagus</em>) para troca de nutrientes e ciclos autossustentáveis.</p>
           <div style="font-size:.78rem;color:var(--color-text-muted);margin-bottom:.75rem"><span class="material-icons" style="font-size:.85rem;vertical-align:middle">schedule</span> 15–30 dias · Setor C</div>
-          <div class="phase-progress-bar">
-            <div class="phase-progress-fill" data-progress="22"></div>
-          </div>
+          <div class="phase-progress-bar"><div class="phase-progress-fill" data-progress="22"></div></div>
           <div style="display:flex;justify-content:space-between;margin-top:.4rem">
             <span style="font-size:.72rem;color:var(--color-text-muted)">Progresso</span>
             <span style="font-size:.72rem;color:var(--color-green);font-family:var(--font-mono)">22%</span>
@@ -126,14 +138,15 @@
 
       <div class="col-12 col-md-6">
         <div class="phase-card" style="--phase-color:#533AB7" data-detail="detail-04">
+          <div class="phase-card-img">
+            <img src="../images/fases/fase4.png" alt="Biomassa fúngica escura de Cladosporium revestindo a parede curva do dome marciano, absorvendo radiação ionizante representada por raios roxos enquanto pontos verdes indicam radiosíntese" />
+          </div>
           <div class="phase-number">04</div>
           <span class="phase-status status-planned">◌ Planejado</span>
           <h3 style="font-size:1.1rem;margin-bottom:.4rem">Proteção e Estabilidade</h3>
           <p class="card-desc" style="font-size:.85rem;margin-bottom:0.75rem">Fungos radiotróficos (<em>Cladosporium sphaerospermum</em>) blindando o ecossistema contra radiação ionizante.</p>
           <div style="font-size:.78rem;color:var(--color-text-muted);margin-bottom:.75rem"><span class="material-icons" style="font-size:.85rem;vertical-align:middle">schedule</span> 30+ dias · Dome completo</div>
-          <div class="phase-progress-bar">
-            <div class="phase-progress-fill" data-progress="0" style="background:#533AB7"></div>
-          </div>
+          <div class="phase-progress-bar"><div class="phase-progress-fill" data-progress="0" style="background:#533AB7"></div></div>
           <div style="display:flex;justify-content:space-between;margin-top:.4rem">
             <span style="font-size:.72rem;color:var(--color-text-muted)">Progresso</span>
             <span style="font-size:.72rem;color:var(--color-purple-light);font-family:var(--font-mono)">0%</span>
@@ -142,7 +155,56 @@
       </div>
     </div>
 
+    <div id="detail-00" class="phase-detail reveal">
+      <div class="phase-detail-img">
+        <img src="../images/fases/fase0.png" alt="Câmaras criogênicas contendo culturas fúngicas luminosas de cor âmbar a bordo de uma nave espacial, com Marte visível ao fundo pela janela" />
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <h4 style="color:#FAC775" class="mb-3">Fase 00 — Transporte da Carga Biológica</h4>
+          <p class="text-dim" style="font-size:.9rem;line-height:1.75">
+            A Fase 0 é a precondição de toda a missão E.V.A.: antes que qualquer fungo possa atuar no solo marciano,
+            ele precisa chegar lá vivo. Os consórcios fúngicos — <em>Trichoderma</em>, <em>Pleurotus</em>, <em>Glomus</em>
+            e <em>Cladosporium</em> — são acondicionados em câmaras criogênicas herméticas e embarcados na cápsula
+            SpaceX Dragon para a viagem de aproximadamente 7 meses até Marte.
+          </p>
+          <p class="text-dim" style="font-size:.9rem;line-height:1.75;margin-top:.75rem">
+            Um sistema de telemetria IoT com ESP32 monitora 6 parâmetros ambientais em tempo real, publicando dados
+            a cada 3 segundos via MQTT (TLS) para o broker HiveMQ Cloud. Alertas visuais (LEDs) e sonoros (buzzer)
+            acionam imediatamente se qualquer parâmetro sair da faixa segura.
+          </p>
+          <div style="margin-top:1.25rem;padding:1rem;background:rgba(184,125,42,0.08);border:1px solid rgba(250,199,117,0.2);border-radius:var(--radius-sm)">
+            <div style="font-size:.75rem;font-family:var(--font-mono);color:#FAC775;margin-bottom:.6rem">// Stack IoT — Edge Computing</div>
+            <div style="display:flex;flex-direction:column;gap:.3rem;font-size:.8rem;color:var(--color-text-dim)">
+              <div><span style="color:var(--color-text-muted);min-width:140px;display:inline-block">Hardware:</span> ESP32 DevKit V1 + DHT22</div>
+              <div><span style="color:var(--color-text-muted);min-width:140px;display:inline-block">Protocolo:</span> MQTT over TLS (porta 8883)</div>
+              <div><span style="color:var(--color-text-muted);min-width:140px;display:inline-block">Broker:</span> HiveMQ Cloud</div>
+              <div><span style="color:var(--color-text-muted);min-width:140px;display:inline-block">Tópico:</span> dragon/telemetry/full</div>
+              <div><span style="color:var(--color-text-muted);min-width:140px;display:inline-block">Intervalo:</span> 3 segundos</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <ul class="phase-detail-list">
+            <li>Temperatura: 4–25°C para sobrevivência dos esporos fúngicos</li>
+            <li>Umidade relativa: acima de 30% para evitar dessecação</li>
+            <li>Pressão atmosférica: 0,9–1,1 atm para integridade das câmaras</li>
+            <li>Radiação ionizante: abaixo de 10 µSv/h para proteção dos inóculos</li>
+            <li>Concentração de O₂: acima de 19,5% para aerobiose controlada</li>
+            <li>Aceleração estrutural: abaixo de 2G para evitar dano mecânico</li>
+          </ul>
+          <p style="font-size:.78rem;color:var(--color-text-muted);margin-top:1rem;padding:.65rem .9rem;background:var(--color-surface-2);border-radius:var(--radius-sm);border:1px solid var(--color-border)">
+            <span class="material-icons" style="font-size:.9rem;vertical-align:middle">info</span>
+            Entrega vinculada à disciplina de <strong style="color:#FAC775">Edge Computing &amp; Computer Systems</strong> — simulação disponível no Wokwi.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div id="detail-01" class="phase-detail reveal">
+      <div class="phase-detail-img">
+        <img src="../images/fases/fase1.png" alt="Filamentos de micélio verde bioluminescente atacando e dissolvendo compostos tóxicos de perclorato no regolito marciano escuro" />
+      </div>
       <div class="row g-4">
         <div class="col-12 col-md-6">
           <h4 class="text-red mb-3">Fase 01 — Desintoxicação</h4>
@@ -168,6 +230,9 @@
     </div>
 
     <div id="detail-02" class="phase-detail reveal">
+      <div class="phase-detail-img">
+        <img src="../images/fases/fase2.png" alt="Rede de micélio bioluminescente em verde-azulado formando estrutura tridimensional ramificada no solo escuro do regolito marciano, vista em macro" />
+      </div>
       <div class="row g-4">
         <div class="col-12 col-md-6">
           <h4 class="text-green mb-3">Fase 02 — Estruturação do Solo</h4>
@@ -192,6 +257,9 @@
     </div>
 
     <div id="detail-03" class="phase-detail reveal">
+      <div class="phase-detail-img">
+        <img src="../images/fases/fase3.png" alt="Três mudas com raízes translúcidas emergindo do solo marciano dentro de um dome, conectadas por rede micelial micorrízica dourada bioluminescente visível abaixo da superfície" />
+      </div>
       <div class="row g-4">
         <div class="col-12 col-md-6">
           <h4 class="text-green mb-3">Fase 03 — Nutrição e Regeneração</h4>
@@ -216,6 +284,9 @@
     </div>
 
     <div id="detail-04" class="phase-detail reveal">
+      <div class="phase-detail-img">
+        <img src="../images/fases/fase4.png" alt="Biomassa fúngica escura de Cladosporium revestindo a parede curva do dome marciano, absorvendo radiação ionizante representada por raios roxos enquanto pontos verdes bioluminescentes indicam o processo de radiosíntese" />
+      </div>
       <div class="row g-4">
         <div class="col-12 col-md-6">
           <h4 class="text-purple mb-3">Fase 04 — Proteção e Estabilidade</h4>
@@ -235,6 +306,69 @@
             <li>Estabilização permanente do ecossistema para colonização de longo prazo</li>
             <li>Monitoramento contínuo de radiação em tempo real via 4 sensores Geiger</li>
           </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-gap reveal">
+      <div class="cta-banner">
+        <span class="section-label">// linha do tempo da missão</span>
+        <h3 style="font-size:1.6rem;margin:.75rem 0 2rem">Da Terra a Marte — 5 Etapas</h3>
+        <div style="display:flex;align-items:flex-start;justify-content:center;gap:0;max-width:700px;margin:0 auto">
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1">
+            <div onclick="document.querySelector('[data-detail=detail-00]').click()"
+                 style="width:52px;height:52px;border-radius:50%;background:rgba(184,125,42,0.2);border:2px solid #B87D2A;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--transition)" 
+                 onmouseover="this.style.boxShadow='0 0 14px rgba(184,125,42,0.5)'" 
+                 onmouseout="this.style.boxShadow='none'">
+              <span style="font-family:var(--font-mono);font-size:.95rem;font-weight:800;color:#B87D2A">0</span>
+            </div>
+            <p style="font-size:.72rem;color:var(--color-white);text-align:center;margin-top:.5rem;line-height:1.3">Transporte</p>
+            <p style="font-size:.65rem;color:var(--color-text-muted);text-align:center">Pré-missão</p>
+          </div>
+          <div style="flex:1;height:2px;background:linear-gradient(to right,#B87D2A,#993C1D);margin-top:26px"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1">
+            <div onclick="document.querySelector('[data-detail=detail-01]').click()"
+                 style="width:52px;height:52px;border-radius:50%;background:rgba(153,60,29,0.2);border:2px solid #993C1D;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--transition)"
+                 onmouseover="this.style.boxShadow='0 0 14px rgba(153,60,29,0.5)'"
+                 onmouseout="this.style.boxShadow='none'">
+              <span style="font-family:var(--font-mono);font-size:.95rem;font-weight:800;color:#993C1D">1</span>
+            </div>
+            <p style="font-size:.72rem;color:var(--color-white);text-align:center;margin-top:.5rem;line-height:1.3">Desintox.</p>
+            <p style="font-size:.65rem;color:var(--color-text-muted);text-align:center">0–5 dias</p>
+          </div>
+          <div style="flex:1;height:2px;background:linear-gradient(to right,#993C1D,#1D9E75);margin-top:26px"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1">
+            <div onclick="document.querySelector('[data-detail=detail-02]').click()"
+                 style="width:52px;height:52px;border-radius:50%;background:rgba(29,158,117,0.2);border:2px solid #1D9E75;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--transition)"
+                 onmouseover="this.style.boxShadow='0 0 14px rgba(29,158,117,0.5)'"
+                 onmouseout="this.style.boxShadow='none'">
+              <span style="font-family:var(--font-mono);font-size:.95rem;font-weight:800;color:#1D9E75">2</span>
+            </div>
+            <p style="font-size:.72rem;color:var(--color-white);text-align:center;margin-top:.5rem;line-height:1.3">Estrutur.</p>
+            <p style="font-size:.65rem;color:var(--color-text-muted);text-align:center">5–15 dias</p>
+          </div>
+          <div style="flex:1;height:2px;background:linear-gradient(to right,#1D9E75,#1D9E75);margin-top:26px"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1">
+            <div onclick="document.querySelector('[data-detail=detail-03]').click()"
+                 style="width:52px;height:52px;border-radius:50%;background:rgba(29,158,117,0.2);border:2px solid #1D9E75;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--transition)"
+                 onmouseover="this.style.boxShadow='0 0 14px rgba(29,158,117,0.5)'"
+                 onmouseout="this.style.boxShadow='none'">
+              <span style="font-family:var(--font-mono);font-size:.95rem;font-weight:800;color:#1D9E75">3</span>
+            </div>
+            <p style="font-size:.72rem;color:var(--color-white);text-align:center;margin-top:.5rem;line-height:1.3">Nutrição</p>
+            <p style="font-size:.65rem;color:var(--color-text-muted);text-align:center">15–30 dias</p>
+          </div>
+          <div style="flex:1;height:2px;background:linear-gradient(to right,#1D9E75,#533AB7);margin-top:26px"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1">
+            <div onclick="document.querySelector('[data-detail=detail-04]').click()"
+                 style="width:52px;height:52px;border-radius:50%;background:rgba(83,58,183,0.2);border:2px solid #533AB7;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--transition)"
+                 onmouseover="this.style.boxShadow='0 0 14px rgba(83,58,183,0.5)'"
+                 onmouseout="this.style.boxShadow='none'">
+              <span style="font-family:var(--font-mono);font-size:.95rem;font-weight:800;color:#533AB7">4</span>
+            </div>
+            <p style="font-size:.72rem;color:var(--color-white);text-align:center;margin-top:.5rem;line-height:1.3">Proteção</p>
+            <p style="font-size:.65rem;color:var(--color-text-muted);text-align:center">30+ dias</p>
+          </div>
         </div>
       </div>
     </div>
